@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор Eleven SDC-554 S</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div id="display">0</div>
+    <div class="buttons">
+      <button onclick="clearDisplay()" data-type="action">C</button>
+      <button onclick="backspace()" data-type="action">←</button>
+      <button onclick="append('(')" data-type="action">(</button>
+      <button onclick="append(')')" data-type="action">)</button>
+      <button onclick="toggleSign()" data-type="action">±</button>
+
+      <button onclick="append('7')" data-type="digit">7</button>
+      <button onclick="append('8')" data-type="digit">8</button>
+      <button onclick="append('9')" data-type="digit">9</button>
+      <button onclick="append('/')" data-type="action">÷</button>
+      <button onclick="percent()" data-type="action">%</button>
+
+      <button onclick="append('4')" data-type="digit">4</button>
+      <button onclick="append('5')" data-type="digit">5</button>
+      <button onclick="append('6')" data-type="digit">6</button>
+      <button onclick="append('*')" data-type="action">×</button>
+      <button onclick="append('Math.sqrt(')" data-type="action">√</button>
+
+      <button onclick="append('1')" data-type="digit">1</button>
+      <button onclick="append('2')" data-type="digit">2</button>
+      <button onclick="append('3')" data-type="digit">3</button>
+      <button onclick="append('-')" data-type="action">−</button>
+      <button onclick="append('.') " data-type="action">.</button>
+
+      <button onclick="append('0')" data-type="digit">0</button>
+      <button onclick="calculate()" class="equals">=</button>
+      <button onclick="square()" data-type="action">x²</button>
+      <button onclick="reciprocal()" data-type="action">1/x</button>
+      <button onclick="append('+')" data-type="action">+</button>
+
+      <button onclick="append('**')" data-type="action">xʸ</button>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
